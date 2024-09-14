@@ -10,8 +10,14 @@ apresentado a seguir:
 7 8 9 10
 11 12 13 14 15 */
 
+/* ALTERACAO: o usuario agora insere o valor maximo, que antes era 15.
+O programa formata todos os numeros da piramide para ficar no padrao do valor maximo. se o max for 1000, o primeiro numero sera 0001.
+se a piramide nao for completa, o programa preenche as lacunas que faltam com 0, e avisa no final.
+*/
+
 int main(int argc, char *argv[])
 {
+    int i = 0;
     int ultimo = 1;
     int maxlength = 0;
 
@@ -37,11 +43,14 @@ int main(int argc, char *argv[])
         }
     }
 
-    while (casa != max)
+    if (casa != 0)
     {
-        printf("000 ");
-        casa++;
+        i = max - casa;
+        while (casa != max)
+        {
+            printf("000 ");
+            casa++;
+        }
+        printf("\na linha acabou antes, o programa completou com %d zeros!", i);
     }
-
-    printf("\nacabou antes, o programa completou com zeros!");
 }
