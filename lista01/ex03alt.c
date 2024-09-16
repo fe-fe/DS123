@@ -24,9 +24,8 @@ int main(int argc, char *argv[])
     if (argc >= 2)
     {
         ultimo = atoi(argv[1]); // funcao que transforma a string do argv[1] em inteiro
+        maxlength = strlen(argv[1]);
     }
-
-    maxlength = strlen(argv[1]);
 
     int max = 1;  // valor maximo que cada linha pode ter, comeca com 1 pois na primeira linha escrevemos apenas 1 valor
     int casa = 0; // segue a quantidade de numeros que ja foram escritos em 1 linha, e nao pode ultrapassar o valor max
