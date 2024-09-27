@@ -8,11 +8,9 @@ int main(void)
     float c;
     char d[100];
 
-    scanf("%d", &a);
-    getchar();
+    scanf("%d\n", &a);
     b = getchar();
-    scanf("%f", &c);
-    getchar();
+    scanf("%f\n", &c);
     gets(d);
 
     printf("%d\n", a);
