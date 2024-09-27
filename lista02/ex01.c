@@ -5,10 +5,8 @@ int main(void)
     char strum[40], strdois[40];
     int iguais = 0;
 
-    scanf("%s", strum);
-    getchar();
-    scanf("%s", strdois);
-    getchar();
+    scanf("%s\n", &strum);
+    scanf("%s", &strdois);
 
     for (int i = 0; i < 40; i++)
     {
